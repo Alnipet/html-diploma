@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alnipet/html-diploma.git"
+    "url": "git+https://github.com/Alnipet/html-diploma.git"
   },
   "git": {
     "scripts": {
