@@ -34,10 +34,6 @@ ul {
     list-style-type: none;
 }
 
-time {
-
-}
-
 button {
     border: none;
     cursor: pointer;
@@ -125,7 +121,7 @@ button {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 61px;
+    margin-top: 62px;
 
     color: #0f0d0e;
 }
@@ -140,7 +136,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 778px;
-    margin-bottom: 59.5px;
+    margin-bottom: 61px;
 }
 
 .post:last-child {
@@ -153,7 +149,6 @@ button {
 
 .post-content {
     width: 367px;
-
 }
 
 .post-header {
@@ -171,10 +166,6 @@ button {
     font-family: OpenSans-Bold, sans-serif;
 
     color: #b59f5b
-}
-
-.link-black {
-
 }
 
 .tags-item:nth-child(1n+2) {
