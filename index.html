@@ -27,7 +27,7 @@
 
 <div class="container page">
   <main class="posts">
-    <div class="post">
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
            alt="Человек идет по пляжу на рассвете"
            width="380">
@@ -50,8 +50,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
            alt="Девушка занимается йогой на пляже"
            width="380">
@@ -73,8 +73,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg"
            alt="Девушка в толпе зрителей на плечах у парня">
       <div class="post-content">
@@ -97,8 +97,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
            alt="Стол. Уже остывший недоеденый завтрак"
            width="380">
@@ -121,8 +121,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg"
            alt="Подушка с надписью на английском"
            width="380">
@@ -146,8 +146,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg"
            alt="Двое стоят на краю скалы"
            width="380">
@@ -170,8 +170,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="post">
+    </article>
+    <article class="post">
       <img class="post-image" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
            alt="Стол. Уже остывший недоеденый обед"
            width="380">
@@ -194,7 +194,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </article>
   </main>
 
   <aside class="sidebar">
@@ -247,41 +247,41 @@
           </header>
         </li>
       </ul>
-    </section>
 
-    <section class="search-widget">
-      <label>
-        <span class="visually-hidden">Поле поиска</span>
-        <input class="search" placeholder="Найти...">
-      </label>
-      <button class="search-btn" type="submit" src="#0">
-        <span class="visually-hidden">Кнопка поиска</span>
-      </button>
-    </section>
+      <form class="search-widget">
+        <label>
+          <span class="visually-hidden">Поле поиска</span>
+          <input class="search" placeholder="Найти..." name="query" required>
+        </label>
+        <button class="search-btn" type="submit" src="#0">
+          <span class="visually-hidden">Кнопка поиска</span>
+        </button>
+      </form>
 
-    <section class="mailing-widget">
       <h2 class="sidebar-item-title">Рассылка</h2>
-      <label>
-        <span class="visually-hidden">Поле e-mail</span>
-        <input class="mailing" type="email" placeholder="Ваш e-mail адрес">
-      </label>
-      <button class="mailing-btn" type="submit" src="#0">
-        <span class="visually-hidden">Подписаться</span>
-        Подписаться
-      </button>
+      <form class="mailing-widget">
+        <label>
+          <span class="visually-hidden">Поле e-mail</span>
+          <input class="mailing" type="email" placeholder="Ваш e-mail адрес" name="subscribe" required>
+        </label>
+        <button class="mailing-btn" type="submit" src="#0">
+          <span class="visually-hidden">Подписаться</span>
+          Подписаться
+        </button>
+      </form>
     </section>
 
     <section class="tags-widget">
       <h2 class="sidebar-item-title">Теги</h2>
       <ul class="tags-inner">
-        <li class="tag-item"><a href="#0">Fashion</a></li>
-        <li class="tag-item"><a href="#0">Music</a></li>
-        <li class="tag-item"><a href="#0">Lifestyle</a></li>
-        <li class="tag-item"><a href="#0">Art</a></li>
-        <li class="tag-item"><a href="#0">Interior</a></li>
-        <li class="tag-item"><a href="#0">Travel</a></li>
-        <li class="tag-item"><a href="#0">Food</a></li>
-        <li class="tag-item"><a href="#0">Health</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Fashion</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Music</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Lifestyle</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Art</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Interior</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Travel</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Food</a></li>
+        <li class="tag-item"><a class="tag-item-link" href="#0">Health</a></li>
       </ul>
     </section>
 
@@ -301,11 +301,31 @@
 <footer class="container footer">
   <address class="footer-inner">
     <ul class="footer-list">
-      <li class="footer-list-item"><a href="#0" class="twitter-link"></a></li>
-      <li class="footer-list-item"><a href="#0" class="pinterest-link"></a></li>
-      <li class="footer-list-item"><a href="#0" class="facebook-link"></a></li>
-      <li class="footer-list-item"><a href="#0" class="instagram-link"></a></li>
-      <li class="footer-list-item"><a href="#0" class="tumblr-link"></a></li>
+      <li class="footer-list-item">
+        <a href="#0" class="social-network-icon twitter-link">
+          <span class="visually-hidden"></span>
+        </a>
+      </li>
+      <li class="footer-list-item">
+        <a href="#0" class="social-network-icon pinterest-link">
+          <span class="visually-hidden"></span>
+        </a>
+      </li>
+      <li class="footer-list-item">
+        <a href="#0" class="social-network-icon facebook-link">
+          <span class="visually-hidden"></span>
+        </a>
+      </li>
+      <li class="footer-list-item">
+        <a href="#0" class="social-network-icon instagram-link">
+          <span class="visually-hidden"></span>
+        </a>
+      </li>
+      <li class="footer-list-item">
+        <a href="#0" class="social-network-icon tumblr-link">
+          <span class="visually-hidden"></span>
+        </a>
+      </li>
     </ul>
   </address>
   <a href="#0" class="copyright">

@@ -105,6 +105,10 @@ button {
     margin-left: 35px;
 }
 
+.header-menu-item > a:hover {
+    border-top: 2px solid;
+}
+
 .header-title {
     max-width: 700px;
     margin-top: 99px;
@@ -127,15 +131,15 @@ button {
 }
 
 .posts {
-    display: flex;
-    flex-direction: column;
+    width: 778px;
 }
 
 .post {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    width: 778px;
+    align-items: flex-start;
+
     margin-bottom: 61px;
 }
 
@@ -148,7 +152,7 @@ button {
 }
 
 .post-content {
-    width: 367px;
+    margin-left: 30px;
 }
 
 .post-header {
@@ -165,11 +169,15 @@ button {
     font-weight: bold;
     font-family: OpenSans-Bold, sans-serif;
 
-    color: #b59f5b
+    color: #b59f5b;
 }
 
 .tags-item:nth-child(1n+2) {
     margin-left: 18px;
+}
+
+.tags-item > a:hover {
+    color: black
 }
 
 .post-title {
@@ -180,6 +188,10 @@ button {
     font-size: 20px;
     line-height: 1.2;
     font-family: OpenSans-Bold, sans-serif;
+}
+
+.post-title > a:hover {
+    color: #b59f5b;
 }
 
 .post-meta {
@@ -199,6 +211,10 @@ button {
 .post-author {
     font-size: 12px;
     font-family: OpenSans-Bold, sans-serif;
+}
+
+.post-author:hover {
+    color: #b59f5b;
 }
 
 .desc {
@@ -241,7 +257,12 @@ button {
 
 .new-post-inner {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 22px;
+}
+
+.new-post-inner:last-child {
+    margin-bottom: 0;
 }
 
 .new-post-image {
@@ -254,12 +275,7 @@ button {
 
 .new-post-date {
     display: block;
-    margin-top: 0;
-    margin-right: 12px;
-    padding: 0;
-
     font-size: 12px;
-    line-height: 1.0;
     color: #888888;
 }
 
@@ -272,10 +288,13 @@ button {
     text-transform: uppercase;
 }
 
+.new-post-title > a:hover {
+    color: #b59f5b;
+}
+
 .search-widget {
     display: flex;
-    margin-top: 59px;
-
+    margin: 59px 0;
 }
 
 .visually-hidden {
@@ -311,8 +330,8 @@ button {
     background-size: 18px 18px;
 }
 
-.mailing-widget {
-    margin-top: 60px;
+.search-btn:hover {
+    background-color: #a7973d;
 }
 
 .mailing {
@@ -344,6 +363,10 @@ button {
     background-color: #b59f5b;
 }
 
+.mailing-btn:hover {
+    background-color: #a7973d;
+}
+
 .tags-widget {
     margin-top: 58px;
 }
@@ -357,13 +380,22 @@ button {
 .tag-item {
     margin-right: 10px;
     margin-bottom: 7px;
-    padding: 3px 12px;
 
     font-size: 12px;
     font-family: OpenSans-Bold, sans-serif;
     text-transform: uppercase;
 
     border: 3px solid #eeeeee;
+}
+
+.tag-item-link {
+    display: block;
+    padding: 3px 12px;
+}
+
+.tag-item-link:hover {
+    color: white;
+    background-color: #b59f5b;
 }
 
 .themes-widget {
@@ -386,11 +418,16 @@ button {
     margin-bottom: 2px;
 }
 
+.theme-item > a:hover {
+    color: #b59f5b;
+}
+
 .theme-index {
     margin-left: 5px;
 
     font-family: OpenSans-Bold, sans-serif;
     font-size: 12px;
+    vertical-align: super;
     color: #b59f5b;
 }
 
@@ -400,11 +437,7 @@ button {
 }
 
 .footer-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85px;
-
+    padding: 30px 0;
     background-color: #f3f7f6;
 }
 
@@ -418,44 +451,33 @@ button {
     margin: 0 13px;
 }
 
-.twitter-link {
+.social-network-icon {
     display: block;
-    width: 21px;
-    height: 21px;
+    width: 24px;
+    height: 24px;
 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+
+.twitter-link {
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
 }
 
 .pinterest-link {
-    display: block;
-    width: 21px;
-    height: 21px;
-
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
 }
 
 .facebook-link {
-    display: block;
-    width: 21px;
-    height: 21px;
-
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
-    background-size: 100%;
 }
 
 .instagram-link {
-    display: block;
-    width: 21px;
-    height: 21px;
-
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
 }
 
 .tumblr-link {
-    display: block;
-    width: 21px;
-    height: 21px;
-
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
 }
 
