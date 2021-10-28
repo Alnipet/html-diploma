@@ -1,6 +1,7 @@
 # html-diploma from [Netology](https://github.com/netology-code/html-2-diploma.git)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Alnipet/html-diploma)
 ![GitHub top language](https://img.shields.io/github/languages/top/Alnipet/html-diploma)
+![GitHub language](https://img.shields.io/github/languages/count/Alnipet/html-diploma)
 
 В рамках дипломного проекта вам необходимо сверстать макет сайта, который выглядит следующим образом:
  
